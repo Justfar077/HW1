@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<title>HW-1</title>
+</head>
+
+<body style="width: 588px; margin: 0 auto ">
+	<h1 style="font-family: 'Inter';
+					font-weight: 600;
+					font-size: 24px;
+					line-height: 29px;">
+
+		<!-- Заголовок -->
+
+		HTML
+	</h1>
+	<div style="
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 15px;">
+
+		<!-- Параграфи -->
+
+		<p>
+			HTML (HyperText Markup Language - "мова гіпертекстової розмітки") - найбільш базовий будівельний блок <a
+				href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82"
+				target="_blank">Інтернету</a> .
+			Він визначає зміст та структуру <a
+				href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82_%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F"
+				target="_blank">веб-контенту</a> . Під гіпертекстом ("hypertext") розуміються посилання, які з'єднують
+			веб-сторінки один з одним або в межах одного <a
+				href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1%D1%81%D0%B0%D0%B9%D1%82"
+				target="_blank">веб-сайту</a>
+			або між веб-сайтами. Посилання є
+			фундаментальним аспектом
+			Інтернету.
+		</p>
+		<p>
+			Інші технології, крім HTML, зазвичай використовуються для опису зовнішнього вигляду/уявлення (<a
+				href="https://uk.wikipedia.org/wiki/CSS" target="_blank">CSS</a>)
+			або
+			функціональності/поведінки (<a href="https://uk.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>)
+			веб-сторінки.
+		</p>
+		<p>
+			<span style="font-weight: 600">HTML-документ</span> - це звичайний текстовий документ, може бути створений як у
+			звичайному
+			текстовому
+			редакторі
+			(Блокнот) , так і в спеціалізованому з підсвічуванням коду (Notepad++, Visual Studio Code і т.п.) .
+			HTML-документ
+			має розширення .html.
+		</p>
+		<p>
+			Завантажуючи контент в Інтернет і пов'язуючи його зі сторінками, створеними іншими людьми, ви стаєте активним
+			учасником Всесвітньої мережі. HTML використовує розмітку ("<a
+				href="https://uk.wikipedia.org/wiki/Vector_Markup_Language" target="_blank">markup</a>") для відображення
+			тексту, зображень та іншого
+			контенту у веб-браузері.
+		</p>
+		<p>
+			<a href="https://uk.wikipedia.org/wiki/HTML" target="_blank">HTML-розмітка</a> включає в себе спеціальні "<a
+				href="https://uk.wikipedia.org/wiki/%D0%95%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8_HTML"
+				target="_blank">елементи</a>",
+			такі як <a
+				href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B3_(%D0%BC%D0%BE%D0%B2%D0%B0_%D1%80%D0%BE%D0%B7%D0%BC%D1%96%D1%82%D0%BA%D0%B8)"
+				target="_blank">теги</a> та <a
+				href="https://uk.wikipedia.org/wiki/%D0%90%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8_HTML"
+				target="_blank">атрибути</a>.
+		</p>
+	</div>
+
+	<!-- Структура -->
+
+	<h2 style="font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;">
+		Структура веб-сторінки
+	</h2>
+	<p style="font-weight: 600;
+					font-size: 12px;
+					line-height: 15px;">
+		HTML-документ складається з двох розділів – заголовка – вміст елемента
+		&lthead&gt (технічна частина, видима лише розробнику) та змістовної частини – вміст
+		&ltbody&gt (відображається на екрані користувача).
+	</p>
+
+	<!-- Взаємодія між елементами -->
+
+	<h2 style="font-style: italic;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;">
+		Взаємозв’язки між вкладеними елементами поділяються на батьківські, дочірні та сестринські:
+	</h2>
+	<div style="font-size: 12px;
+					line-height: 15px;
+					font-style: italic;">
+		<p>
+			<span style="font-weight: 600; font-style: normal;">Предок</span> - елемент, який містить інші елементи.
+			Предком для всіх елементів
+			є &lthtml&gt. У
+			той же
+			час елемент
+			&ltbody&gt є предком для всіх елементів, що містяться в ньому: &ltheader&gt, &ltnav&gt, &lth1&gt і т.д.
+		</p>
+		<p>
+			<span style="font-weight: 600; font-style: normal;">Нащадок</span> - елемент, розташований усередині одного або
+			більше типів
+			елементів. Наприклад, &ltbody&gt
+			є нащадком
+			&lthtml&gt, а елемент &ltheader&gt є нащадком одночасно &ltbody&gt і &lthtml&gt.
+		</p>
+		<p>
+			<span style="font-weight: 600; font-style: normal;">Батьківський елемент</span> - елемент, пов'язаний з іншими
+			елементами нижчого
+			рівня і вище за них.
+		</p>
+		<p>
+			<span style="font-weight: 600; font-style: normal;">Дочірній елемент</span> — елемент, що безпосередньо
+			підпорядкований іншому
+			елементу вищого рівня.
+		</p>
+		<p>
+			<span style="font-weight: 600; font-style: normal;">Сестринський елемент</span> — елемент, що має спільний
+			батьківський елемент із
+			розглянутим, так звані
+			елементи одного
+			рівня, наприклад &lth1&gt, &ltdiv&gt і &ltul&gt або &ltmeta&gt, &ltlink&gt і &lttitle&gt.
+		</p>
+	</div>
+
+	<!-- Примітки -->
+
+	<h3 style="font-style: italic;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 15px;">
+		Примітка
+	</h3>
+	<p style="font-weight: 400;
+					font-size: 11px;
+					line-height: 13px;">
+		При виконанні цього Д/З використовуйте теги
+		&ltp&gt, &ltbr&gt,<br> &ltspan&gt, &lth1&gt, &lth2&gt... <br>
+		Всі слова які виглядають як <a
+			href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82"
+			target="_blank">Інтернету</a> мають бути посиланнями, <br> тобто вписані в тег
+		&lta&gt і
+		прописано
+		посилання на статтю у <br> вікіпедії з відповідною інформацією.
+	</p>
+	<div style="margin-left: 243px;
+					font-size: 11px;
+					line-height: 13px;">
+		<p>
+			Аби скопіювати макет до себе, щоб мати змогу редагувати виконайте наступні дії:
+		<ul style="background: linear-gradient(180deg, #000000 0%, #1500FF 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;">
+			<li>
+				натисніть на стрілку біля назви роботи зверху
+			</li>
+			<li>
+				оберіть пункт Duplicate
+			</li>
+			<li>
+				після провантаження відкрийте у модалці знизу екрану, натисканням Open, копію макету.
+			</li>
+		</ul>
+		</p>
+	</div>
+	<p style="style=font-size: 11px;
+					line-height: 13px;
+					text-align:right;
+					background: linear-gradient(180deg, #000000 0%, #1500FF 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;">
+		УСПІХУ У ВИКОНАННІ!
+	</p>
+	<div style="background: linear-gradient(180deg, #100775 0%, #5648FF 100%);">
+		<div style="text-align:center;">
+			<img src="./img/LOGO TEXT.png" alt="LOGO">
+		</div>
+	</div>
+</body>
+
+</html>
